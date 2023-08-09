@@ -1,14 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fundo_900"
     tools:context=".presentation.TravelCostFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
+        android:id="@+id/linearLayout_travel_consumo"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
+        android:orientation="horizontal">
 
-</FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fuel_gas02_station" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="consumo, Km por litro:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tv_travel_consumo"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:hint="00"
+            android:inputType="number"
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_travel_distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_travel_consumo"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_travel_consumo">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/distance_to_travel_between_two_points_svgrepo_com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Distância em Km:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tv_travel_distancia"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="54dp"
+            android:hint="00"
+            android:inputType="number"
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_travel_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_travel_distancia"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_travel_consumo">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coin_svgrepo_com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Preço por litro, R$:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tv_travel_preco"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:hint="0.00"
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"
+            android:inputType="numberDecimal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_travel_pessoas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_travel_preco"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout_travel_consumo">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/people_svgrepo_com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="pessoas a bordo:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/tv_travel_pessoas"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="57dp"
+            android:hint="00"
+            android:inputType="number"
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="calcular"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linearLayout_travel_pessoas"
+        android:background="@color/laranja_button"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
