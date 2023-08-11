@@ -1,14 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.DistanceFragment">
+    android:background="@color/fundo_900"
+    android:orientation="vertical"
+    tools:context=".presentation.TravelCostFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#5C666A"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Custos      Distâncias"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
-</FrameLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fuel_gas02_station"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Consumo (km/L):"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/consumo_km_L"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:hint="00"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/laranja_button"
+
+            android:textColorHint="@color/laranja_button"
+            android:textColorLink=""
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fuel_gas02_station" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Combustível (Litros):"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/combustivel_L"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:hint="00"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/laranja_button"
+            android:textColorHint="@color/laranja_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/coin_svgrepo_com" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Preço por litro R$:"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/preco_combustivel_L"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="48dp"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@color/laranja_button"
+            android:textColorHint="@color/laranja_button"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="300dp"
+        android:background="@color/laranja_button"
+        android:padding="20dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:text="calcular"
+        android:textColor="#F4F4F4"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
