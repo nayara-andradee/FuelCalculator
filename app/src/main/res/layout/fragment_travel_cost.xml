@@ -26,17 +26,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/tv_entrada_style"
+            android:layout_marginStart="10dp"
             android:text="consumo, Km por litro:"
-             />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/tv_travel_consumo"
-            style="@style/edt_style"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
             android:layout_marginStart="12dp"
             android:hint="00"
             android:inputType="number"
-            />
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"/>
     </LinearLayout>
 
     <LinearLayout
@@ -58,17 +61,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/tv_entrada_style"
+            android:layout_marginStart="10dp"
             android:text="Distância em Km:"
-             />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/tv_travel_distancia"
-            style="@style/edt_style"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
             android:layout_marginStart="54dp"
             android:hint="00"
             android:inputType="number"
-            />
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"/>
     </LinearLayout>
 
     <LinearLayout
@@ -90,15 +96,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/tv_entrada_style"
+            android:layout_marginStart="10dp"
             android:text="Preço por litro, R$:"
-             />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/tv_travel_preco"
-            style="@style/edt_style"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
             android:layout_marginStart="48dp"
             android:hint="0.00"
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"
             android:inputType="numberDecimal"/>
     </LinearLayout>
 
@@ -121,17 +131,20 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/tv_entrada_style"
-            android:text="Pessoas a bordo:"
-             />
+            android:layout_marginStart="10dp"
+            android:text="pessoas a bordo:"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/tv_travel_pessoas"
-            style="@style/edt_style"
+            android:layout_width="100dp"
+            android:layout_height="48dp"
             android:layout_marginStart="57dp"
             android:hint="00"
             android:inputType="number"
-            />
+            android:textColorHint="@color/laranja_button"
+            android:textColor="@color/laranja_button"/>
     </LinearLayout>
 
     <Button
