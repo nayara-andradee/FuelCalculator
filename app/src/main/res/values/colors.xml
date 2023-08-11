@@ -8,6 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FAFAFA</color>
     <color name="fundo_900">#3D5058</color>
-    <color name="fundo_500">#456D7D</color>
+    <color name="fundo_500">#3D5058</color>
     <color name="laranja_button">#F58220</color>
 </resources>

@@ -2,6 +2,7 @@ package com.example.fuelcalculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils.replace
 import androidx.fragment.app.commit
 import com.example.fuelcalculator.presentation.DistanceFragment
 import com.example.fuelcalculator.presentation.FuelCalculatorViewModel
