@@ -14,4 +14,24 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="edt_style" parent="ThemeOverlay.Material3.TextInputEditText">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/laranja_button</item>
+        <item name="android:textColorHint">@color/laranja_button</item>
+    </style>
+
+    <style name="tv_entrada_style" parent="Widget.AppCompat.TextView">
+        <item name="textInputStyle">@font/font_emibold</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="btnnavview" parent="Widget.Design.BottomNavigationView">
+        <item name="itemBackground">@color/fundo_500</item>
+        <item name="itemTextColor">@color/white</item>
+        <item name="itemTextAppearanceActive">@color/white</item>
+    </style>
+
+
 </resources>
