@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:backgroundTint="@color/fundo_900"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
-    <include android:id="@+id/include" layout="@layout/toolbar_main" />
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_main" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottonNaigationView"
+        style="@style/btnnavview"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:background="@color/fundo_500"
-       style="@style/btnnavview"
         app:menu="@menu/menu_select" />
 
-    
+
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:layout="@layout/fragment_travel_cost" />
-
-
 
 
 </LinearLayout>
