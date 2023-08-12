@@ -53,7 +53,6 @@
             android:textColor="@color/laranja_button"
 
             android:textColorHint="@color/laranja_button"
-            android:textColorLink=""
             android:textStyle="bold" />
     </LinearLayout>
 
