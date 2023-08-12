@@ -1,40 +1,53 @@
 package com.example.fuelcalculator.presentation
 
+import android.view.View
 import androidx.lifecycle.ViewModel
+import com.google.android.material.snackbar.Snackbar
 
 class FuelCalculatorViewModel: ViewModel(){
     //criando o ViewModel
-    companion object{
-        fun creat (): FuelCalculatorViewModel{
+    companion object {
+        fun creat(): FuelCalculatorViewModel {
             return FuelCalculatorViewModel()
         }
-
+    }
         //  calculo do sua viagem requer
-        fun calcLitrosPorViagem(distancia: Int, medconsumo: Int): Int{
-            val result: Int = distancia / medconsumo
+        fun calcLitrosPorViagem(distancia: Double, medconsumo: Double): Double{
+            val result: Double = distancia / medconsumo
             return result
         }
 
         // calculo custo viagem
-        fun calcCustoViagem(quantLitros: Int, valor: Float): Float{
-            val result: Float = quantLitros * valor
+        fun calcCustoViagem(quantLitros: Double, valor: Double): Double{
+            val result: Double = quantLitros * valor
             return result
         }
 
         //calculo custo por pessoa
-        fun custoPorPessoa(custoViagem: Float, quantPessoas: Int): Float{
-            val result: Float = custoViagem / quantPessoas
+        fun custoPorPessoa(custoViagem: Double, quantPessoas: Double): Double{
+            val result: Double = custoViagem / quantPessoas
             return result
         }
 
         //calculo autonomia
-        fun autonomia(litrosPorViagem: Int, consumo: Int): Int{
+        fun autonomia(litrosPorViagem: Double, consumo: Double): Double{
             val result = litrosPorViagem * consumo
             return result
         }
+
+    //convertendo de string para Float
+    fun convertDouble(string: String): Double{
+        val result = string.toDouble()
+        return result
+    }
+    //mansagem de erro.
+    fun showmessege(view: View, mensagem:String){
+        Snackbar.make(view, mensagem, Snackbar.LENGTH_LONG)
+            .setAction("Action", null)
+            .show()
+    }
 
     }
 
 
 
-}

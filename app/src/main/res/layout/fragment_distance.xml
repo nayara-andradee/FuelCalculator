@@ -140,7 +140,7 @@
         android:paddingStart="50dp"
         android:paddingEnd="50dp"
         android:text="calcular"
-        android:textColor="#F4F4F4"
+        android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold" />
 
