@@ -30,8 +30,8 @@ class FuelCalculatorViewModel: ViewModel(){
         }
 
         //calculo autonomia
-        fun autonomia(litrosPorViagem: Double, consumo: Double): Double{
-            val result = litrosPorViagem * consumo
+        fun autonomia(consumo: Double, combustivel: Double): Double{
+            val result = consumo * combustivel
             return result
         }
 
