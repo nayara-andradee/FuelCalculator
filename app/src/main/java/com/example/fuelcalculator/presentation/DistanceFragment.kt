@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import com.example.fuelcalculator.R
 
 
@@ -31,8 +32,10 @@ class DistanceFragment : Fragment() {
 
         val btnCalculate = view.findViewById<Button>(R.id.btn_calculate)
         val consumoKmL = view.findViewById<EditText>(R.id.consumo_km_L)
-        val combustivel = view.findViewById<EditText>(R.id.consumo_km_L)
+        val combustivel = view.findViewById<EditText>(R.id.combustivel_L)
         val precoCombustivel = view.findViewById<EditText>(R.id.preco_combustivel_L)
+        val resultadoDistancia = view.findViewById<TextView>(R.id.resultado_distancia)
+        val resultadoPreco = view.findViewById<TextView>(R.id.resultado_preco)
 
 
         btnCalculate.setOnClickListener {
@@ -45,8 +48,12 @@ class DistanceFragment : Fragment() {
                 val combustivel = combustivelString.toDouble()
                 val precoCombustivel = precoCombustivelString.toDouble()
 
-                val precoTotalCombustivel = combustivel * precoCombustivel
+
                 val distancia = consumo * combustivel
+                val precoTotalCombustivel = combustivel * precoCombustivel
+
+                resultadoDistancia.text = ("Seu veículo anda com $combustivel Litros de combustível $distancia km" )
+                resultadoPreco.text = ("Você irá gastar $precoTotalCombustivel reais na sua viagem")
 
             }
         }
