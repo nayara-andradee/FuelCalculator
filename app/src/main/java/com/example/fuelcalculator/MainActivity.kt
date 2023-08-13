@@ -3,7 +3,9 @@ package com.example.fuelcalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils.replace
+import android.widget.Button
 import androidx.fragment.app.commit
+import com.example.fuelcalculator.presentation.DialogCusto
 import com.example.fuelcalculator.presentation.DistanceFragment
 import com.example.fuelcalculator.presentation.FuelCalculatorViewModel
 import com.example.fuelcalculator.presentation.TravelCostFragment
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         val gastosFragment = TravelCostFragment.newInstance()
         val distanceFragment = DistanceFragment.newInstance()
         val bottonNavView = findViewById<BottomNavigationView>(R.id.bottonNaigationView)
+
 
         supportFragmentManager.commit {
             replace(R.id.fragment_container_view,gastosFragment)
