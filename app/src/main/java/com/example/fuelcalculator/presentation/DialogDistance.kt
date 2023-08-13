@@ -20,4 +20,3 @@ class DialogDistance : DialogFragment() {
         super.onViewCreated(view, savedInstanceState)
     }
 }
-}
