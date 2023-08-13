@@ -1,5 +1,6 @@
 package com.example.fuelcalculator.presentation
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,9 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
-import androidx.lifecycle.ViewModelProvider
 import com.example.fuelcalculator.R
+import com.example.fuelcalculator.Resultado
 
 
 /**
@@ -17,6 +17,7 @@ import com.example.fuelcalculator.R
  * create an instance of this fragment.
  */
 class TravelCostFragment : Fragment() {
+
     var viewModel = FuelCalculatorViewModel.creat()
 
     override fun onCreateView(
@@ -48,13 +49,20 @@ class TravelCostFragment : Fragment() {
                 && preco.isNotEmpty() && pessoas.isNotEmpty()){
                 //convertendo os dados inseridos em "Int" e "Float"
                 val consumoInt = viewModel.convertDouble(consumo)
-                val distanciaInt = viewModel.convertDouble(distancia)
-                val precoInt = viewModel.convertDouble(preco)
-                val pessoasInt = viewModel.convertDouble(pessoas)
+                val distanciaDouble = viewModel.convertDouble(distancia)
+                val precoDouble = viewModel.convertDouble(preco)
+                val pessoasDouble = viewModel.convertDouble(pessoas)
                 // calculando resultados.
-                val litrosPorViagem = viewModel.calcLitrosPorViagem(distanciaInt,consumoInt)
-                val custoViagem = viewModel.calcCustoViagem(litrosPorViagem, precoInt)
-                val custoPorPessoas = viewModel.custoPorPessoa(custoViagem,pessoasInt)
+                val litrosPorViagem = viewModel.calcLitrosPorViagem(distanciaDouble,consumoInt)
+                val custoViagem = viewModel.calcCustoViagem(litrosPorViagem, precoDouble)
+                val custoPorPessoas = viewModel.custoPorPessoa(custoViagem,pessoasDouble)
+                val resultado = Resultado(litrosPorViagem,distanciaDouble,custoViagem,custoPorPessoas)
+
+                    val argument = resultado
+                    val dialog = DialogCusto.newInstance(argument)
+                    dialog.show(requireFragmentManager(), "MeuDialogFragment")
+
+
             }else{viewModel.showmessege(view,"Preencha todos os campos para calcular")}
 
 
