@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.fragment.app.viewModels
 import com.example.fuelcalculator.R
+import com.example.fuelcalculator.ResultadoDistance
 
 
 /**
@@ -18,6 +20,7 @@ import com.example.fuelcalculator.R
  */
 class DistanceFragment : Fragment() {
 
+    var viewModel = FuelCalculatorViewModel.creat()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,8 +37,7 @@ class DistanceFragment : Fragment() {
         val consumoKmL = view.findViewById<EditText>(R.id.consumo_km_L)
         val combustivel = view.findViewById<EditText>(R.id.combustivel_L)
         val precoCombustivel = view.findViewById<EditText>(R.id.preco_combustivel_L)
-        val resultadoDistancia = view.findViewById<TextView>(R.id.resultado_distancia)
-        val resultadoPreco = view.findViewById<TextView>(R.id.resultado_preco)
+
 
 
         btnCalculate.setOnClickListener {
@@ -49,12 +51,15 @@ class DistanceFragment : Fragment() {
                 val precoCombustivel = precoCombustivelString.toDouble()
 
 
-                val distancia = consumo * combustivel
-                val precoTotalCombustivel = combustivel * precoCombustivel
+                val autonomia = viewModel.autonomia(consumo, combustivel)
+                val precoTotalCombustivel = viewModel.calcCustoViagem(combustivel, precoCombustivel)
 
-                resultadoDistancia.text = ("Seu veículo anda com $combustivel Litros de combustível $distancia km" )
-                resultadoPreco.text = ("Você irá gastar $precoTotalCombustivel reais na sua viagem")
+                val argument= ResultadoDistance(autonomia,precoTotalCombustivel)
+                val dialog = DialogDistance.newInstance(argument)
+                dialog.show(requireFragmentManager(), "MeuDialogFragment")
 
+            } else {
+                viewModel.showmessege(view, "Preencha todos os campos para calcular")
             }
         }
 
