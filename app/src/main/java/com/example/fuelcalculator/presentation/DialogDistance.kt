@@ -46,8 +46,10 @@ class DialogDistance : DialogFragment() {
         val resultado = arguments?.getSerializable(ARGUMENT_KEY) as? ResultadoDistance
         val resultadoDistancia = view.findViewById<TextView>(R.id.resultado_distancia)
         val resultadoPreco = view.findViewById<TextView>(R.id.resultado_preco)
+        val autonomia: String = "%.2fKm".format(resultado?.autonomia)
+        val custoviagem: String = "R$%.2f".format(resultado?.precoTotalCombustivel)
 
-        resultadoDistancia.text =("${resultado?.autonomia} km")
-        resultadoPreco.text = ("R$${resultado?.precoTotalCombustivel} Reais")
+        resultadoDistancia.text = autonomia
+        resultadoPreco.text = custoviagem
     }
 }

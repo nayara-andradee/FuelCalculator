@@ -26,22 +26,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Consumo (km/L):"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="20sp" />
+            style="@style/tv_entrada_style"
+            android:text="Consumo (km/L)"
+             />
 
         <EditText
             android:id="@+id/consumo_km_L"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="41dp"
+            style="@style/edt_style"
+            android:layout_marginStart="88dp"
             android:inputType="numberDecimal"
-            android:textAlignment="center"
-            android:textColor="@color/laranja_button"
-            android:textColorHint="@color/laranja_button"
-            android:textStyle="bold" />
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -64,22 +58,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:layout_marginStart="10dp"
-            android:text="Combustível (Litros):"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            style="@style/tv_entrada_style"
+            android:text="Combustível (Litros)"
+             />
 
         <EditText
             android:id="@+id/combustivel_L"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
+            style="@style/edt_style"
             android:inputType="numberDecimal"
-            android:layout_marginStart="10dp"
-            android:textAlignment="center"
-            android:textColor="@color/laranja_button"
-            android:textColorHint="@color/laranja_button"
-            android:textStyle="bold" />
+            android:layout_marginStart="60dp"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -101,23 +89,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            style="@style/tv_entrada_style"
             android:layout_gravity="center_vertical"
-            android:text="Preço por litro R$:"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:text="Preço por litro R$"
+            />
 
         <EditText
             android:id="@+id/preco_combustivel_L"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="32dp"
+            style="@style/edt_style"
+            android:layout_marginStart="82dp"
             android:inputType="numberDecimal"
-            android:textAlignment="center"
-            android:textColor="@color/laranja_button"
-            android:textColorHint="@color/laranja_button"
-            android:textStyle="bold" />
+            />
     </LinearLayout>
 
     <Button

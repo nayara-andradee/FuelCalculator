@@ -17,7 +17,7 @@
         android:id="@+id/bottonNaigationView"
         style="@style/btnnavview"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:background="@color/fundo_500"
         app:menu="@menu/menu_select" />
 
