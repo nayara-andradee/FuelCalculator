@@ -26,20 +26,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="consumo, Km por litro:"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            style="@style/tv_entrada_style"
+            android:text="consumo, Km por litro"
+             />
 
         <EditText
             android:id="@+id/edt_travel_consumo"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
+            style="@style/edt_style"
             android:layout_marginStart="12dp"
-            android:hint="00"
             android:inputType="numberDecimal"
-            android:textColorHint="@color/laranja_button"
-            android:textColor="@color/laranja_button"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -61,20 +57,16 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Distância em Km:"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            style="@style/tv_entrada_style"
+            android:text="Distância em Km"
+             />
 
         <EditText
             android:id="@+id/edt_travel_distancia"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="54dp"
-            android:hint="00"
+            android:layout_marginStart="58dp"
+            style="@style/edt_style"
             android:inputType="numberDecimal"
-            android:textColorHint="@color/laranja_button"
-            android:textColor="@color/laranja_button"/>
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -96,19 +88,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Preço por litro, R$:"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            style="@style/tv_entrada_style"
+            android:text="Preço por litro, R$"
+             />
 
         <EditText
             android:id="@+id/edt_travel_preco"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
+            style="@style/edt_style"
             android:layout_marginStart="48dp"
-            android:hint="0.00"
-            android:textColorHint="@color/laranja_button"
-            android:textColor="@color/laranja_button"
             android:inputType="numberDecimal"/>
     </LinearLayout>
 
@@ -131,33 +118,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="pessoas a bordo:"
-            android:textColor="@color/white"
-            android:textSize="20sp" />
+            style="@style/tv_entrada_style"
+            android:text="pessoas a bordo"
+             />
 
         <EditText
             android:id="@+id/edt_travel_pessoas"
-            android:layout_width="100dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="57dp"
-            android:hint="00"
-            android:inputType="numberDecimal"
-            android:textColorHint="@color/laranja_button"
-            android:textColor="@color/laranja_button"/>
+            style="@style/edt_style"
+            android:layout_marginStart="62dp"
+            android:inputType="number"
+            />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_travel_calcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="46dp"
+        android:layout_marginTop="50dp"
         android:text="calcular"
-        android:textSize="18sp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/linearLayout_travel_pessoas"
-        android:background="@color/laranja_button"
-        android:textColor="@color/black"/>
+        style="@style/botaoCalcular"
+
+       />
 
 </LinearLayout>
