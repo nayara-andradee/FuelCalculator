@@ -16,7 +16,7 @@
         <TextView
             android:text="Distância"
             android:fontFamily="@font/font_emibold"
-            android:textSize="30sp"
+            android:textSize="25sp"
             android:textStyle="bold"
             android:textColor="@color/white"
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
 
         <TextView
 
-            android:text="Você tem autonomia de:"
+            android:text="Você tem autonomia de"
             style="@style/tv_entrada_style"
             android:layout_marginEnd="7dp"
             android:layout_width="wrap_content"
@@ -72,7 +72,7 @@
             android:src="@drawable/coin_svgrepo_com"/>
 
         <TextView
-            android:text="Custo total:"
+            android:text="Custo total"
             style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -83,6 +83,7 @@
         android:id="@+id/resultado_preco"
         android:text="R$120,00"
         style="@style/tv_number"
+        android:layout_marginBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>
