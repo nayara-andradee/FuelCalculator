@@ -22,6 +22,8 @@
         <item name="android:layout_height">48dp</item>
         <item name="android:textColor">@color/laranja_button</item>
         <item name="android:textColorHint">@color/laranja_button</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
     </style>
 
     <style name="tv_entrada_style" parent="Widget.AppCompat.TextView">
@@ -29,6 +31,7 @@
         <item name="android:layout_marginStart">10dp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="btnnavview" parent="Widget.Design.BottomNavigationView">

@@ -15,7 +15,7 @@
     <TextView
         android:text="Resultado do custo"
         android:fontFamily="@font/font_emibold"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
 
     <TextView
         android:id="@+id/rv_litros"
-        android:text="Sua Viagem Reque"
+        android:text="Sua viagem requer"
         style="@style/tv_entrada_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
@@ -58,7 +58,6 @@
 
     <TextView
         android:text="Para"
-        android:fontFamily="@font/font_emibold"
         style="@style/tv_entrada_style"
         android:layout_marginStart="25dp"
         android:layout_width="match_parent"
@@ -84,7 +83,7 @@
             android:src="@drawable/coin_svgrepo_com"/>
 
         <TextView
-            android:text="Custo da Viagem"
+            android:text="Custo da viagem"
             style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -111,8 +110,7 @@
             android:src="@drawable/people_svgrepo_com"/>
 
         <TextView
-            android:text="Por Pessoa"
-            android:fontFamily="@font/font_emibold"
+            android:text="Por pessoa"
             style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -123,6 +121,7 @@
         android:id="@+id/tv_dialogcusto_custopessoa"
         android:text="R$30,00"
         style="@style/tv_number"
+        android:layout_marginBottom="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
