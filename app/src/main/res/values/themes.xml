@@ -23,6 +23,7 @@
         <item name="android:textColor">@color/laranja_button</item>
         <item name="android:textColorHint">@color/laranja_button</item>
         <item name="android:textStyle">bold</item>
+
         <item name="android:textAlignment">center</item>
     </style>
 
