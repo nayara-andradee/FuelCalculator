@@ -33,6 +33,7 @@
         <EditText
             android:id="@+id/consumo_km_L"
             style="@style/edt_style"
+            android:gravity="right"
             android:layout_marginStart="88dp"
             android:inputType="numberDecimal"
              />
