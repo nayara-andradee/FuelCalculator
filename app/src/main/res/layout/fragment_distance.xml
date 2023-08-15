@@ -33,7 +33,7 @@
         <EditText
             android:id="@+id/consumo_km_L"
             style="@style/edt_style"
-            android:layout_marginStart="88dp"
+            android:layout_marginStart="50dp"
             android:inputType="numberDecimal"
              />
     </LinearLayout>
@@ -65,9 +65,8 @@
         <EditText
             android:id="@+id/combustivel_L"
             style="@style/edt_style"
-            android:inputType="numberDecimal"
-            android:layout_marginStart="60dp"
-            />
+            android:layout_marginStart="22dp"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <LinearLayout
@@ -97,9 +96,8 @@
         <EditText
             android:id="@+id/preco_combustivel_L"
             style="@style/edt_style"
-            android:layout_marginStart="82dp"
-            android:inputType="numberDecimal"
-            />
+            android:layout_marginStart="44dp"
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <Button
