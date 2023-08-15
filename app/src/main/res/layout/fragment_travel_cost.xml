@@ -27,13 +27,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/tv_entrada_style"
-            android:text="consumo, Km por litro"
+            android:text="Consumo (km/L)"
              />
 
         <EditText
             android:id="@+id/edt_travel_consumo"
             style="@style/edt_style"
-            android:layout_marginStart="12dp"
+            android:layout_marginStart="58dp"
             android:inputType="numberDecimal"
             />
     </LinearLayout>
@@ -119,7 +119,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             style="@style/tv_entrada_style"
-            android:text="pessoas a bordo"
+            android:text="Pessoas a bordo"
              />
 
         <EditText

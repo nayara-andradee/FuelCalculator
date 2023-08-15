@@ -65,18 +65,8 @@ class TravelCostFragment : Fragment() {
 
             }else{viewModel.showmessege(view,"Preencha todos os campos para calcular")}
 
-
-
-
-
         }
-
-
-
     }
-
-
-
 
     companion object {
         /**
