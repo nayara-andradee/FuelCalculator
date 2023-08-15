@@ -24,18 +24,16 @@
             android:textStyle="bold" />
 
         <TextView
+            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/tv_entrada_style"
-            android:text="Consumo (km/L)"
-             />
+            android:text="Consumo (km/L)" />
 
         <EditText
             android:id="@+id/consumo_km_L"
             style="@style/edt_style"
             android:layout_marginStart="50dp"
-            android:inputType="numberDecimal"
-             />
+            android:inputType="numberDecimal" />
     </LinearLayout>
 
     <LinearLayout
@@ -55,12 +53,11 @@
             android:src="@drawable/fuel_gas02_station" />
 
         <TextView
+            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            style="@style/tv_entrada_style"
-            android:text="Combustível (Litros)"
-             />
+            android:text="Combustível (Litros)" />
 
         <EditText
             android:id="@+id/combustivel_L"
@@ -79,19 +76,17 @@
 
 
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/coin_svgrepo_com" />
 
         <TextView
+            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/tv_entrada_style"
             android:layout_gravity="center_vertical"
-            android:text="Preço por litro R$"
-            />
+            android:text="Preço por litro R$" />
 
         <EditText
             android:id="@+id/preco_combustivel_L"
@@ -102,11 +97,11 @@
 
     <Button
         android:id="@+id/btn_calculate"
+        style="@style/botaoCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        style="@style/botaoCalcular"
-        android:text="calcular"/>
+        android:text="calcular" />
 
 
 </LinearLayout>
