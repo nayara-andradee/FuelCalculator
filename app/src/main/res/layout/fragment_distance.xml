@@ -24,16 +24,19 @@
             android:textStyle="bold" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Consumo (km/L)" />
+            style="@style/tv_entrada_style"
+            android:text="Consumo (km/L)"
+             />
 
         <EditText
             android:id="@+id/consumo_km_L"
             style="@style/edt_style"
-            android:layout_marginStart="50dp"
-            android:inputType="numberDecimal" />
+            android:gravity="right"
+            android:layout_marginStart="88dp"
+            android:inputType="numberDecimal"
+             />
     </LinearLayout>
 
     <LinearLayout
@@ -53,17 +56,19 @@
             android:src="@drawable/fuel_gas02_station" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="Combustível (Litros)" />
+            style="@style/tv_entrada_style"
+            android:text="Combustível (Litros)"
+             />
 
         <EditText
             android:id="@+id/combustivel_L"
             style="@style/edt_style"
-            android:layout_marginStart="22dp"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            android:layout_marginStart="60dp"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -76,32 +81,35 @@
 
 
         <ImageView
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:src="@drawable/coin_svgrepo_com" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            style="@style/tv_entrada_style"
             android:layout_gravity="center_vertical"
-            android:text="Preço por litro R$" />
+            android:text="Preço por litro R$"
+            />
 
         <EditText
             android:id="@+id/preco_combustivel_L"
             style="@style/edt_style"
-            android:layout_marginStart="44dp"
-            android:inputType="numberDecimal" />
+            android:layout_marginStart="82dp"
+            android:inputType="numberDecimal"
+            />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_calculate"
-        style="@style/botaoCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="calcular" />
+        style="@style/botaoCalcular"
+        android:text="calcular"/>
 
 
 </LinearLayout>
