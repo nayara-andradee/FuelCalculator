@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fundo_900"
     android:orientation="vertical"
+    android:background="@color/fundo_900"
     tools:context=".presentation.TravelCostFragment">
 
     <LinearLayout
         android:id="@+id/linearLayout_travel_consumo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
+        android:layout_marginStart="12dp"
         android:orientation="horizontal">
 
 
@@ -23,26 +24,28 @@
             android:src="@drawable/fuel_gas02_station" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Consumo (Km/L)" />
+            style="@style/tv_entrada_style"
+            android:text="Consumo (km/L)"
+             />
 
         <EditText
             android:id="@+id/edt_travel_consumo"
             style="@style/edt_style"
-            android:layout_marginStart="56dp"
-            android:inputType="numberDecimal" />
+            android:layout_marginStart="58dp"
+            android:inputType="numberDecimal"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout_travel_distancia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout_travel_consumo"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="2dp"
         android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_travel_consumo"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout_travel_consumo">
 
 
@@ -52,26 +55,28 @@
             android:src="@drawable/distance_to_travel_between_two_points_svgrepo_com" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Distância em Km" />
+            style="@style/tv_entrada_style"
+            android:text="Distância em Km"
+             />
 
         <EditText
             android:id="@+id/edt_travel_distancia"
-            style="@style/edt_style"
             android:layout_marginStart="58dp"
-            android:inputType="numberDecimal" />
+            style="@style/edt_style"
+            android:inputType="numberDecimal"
+            />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout_travel_preco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout_travel_distancia"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="2dp"
         android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_travel_distancia"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout_travel_consumo">
 
 
@@ -81,26 +86,27 @@
             android:src="@drawable/coin_svgrepo_com" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Preço por litro, R$" />
+            style="@style/tv_entrada_style"
+            android:text="Preço por litro, R$"
+             />
 
         <EditText
             android:id="@+id/edt_travel_preco"
             style="@style/edt_style"
             android:layout_marginStart="48dp"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"/>
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout_travel_pessoas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout_travel_preco"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="2dp"
         android:orientation="horizontal"
+        android:layout_below="@+id/linearLayout_travel_preco"
+        android:layout_marginTop="2dp"
+        android:layout_marginStart="12dp"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout_travel_consumo">
 
 
@@ -110,26 +116,28 @@
             android:src="@drawable/people_svgrepo_com" />
 
         <TextView
-            style="@style/tv_entrada_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pessoas a bordo" />
+            style="@style/tv_entrada_style"
+            android:text="Pessoas a bordo"
+             />
 
         <EditText
             android:id="@+id/edt_travel_pessoas"
             style="@style/edt_style"
             android:layout_marginStart="62dp"
-            android:inputType="number" />
+            android:inputType="number"
+            />
     </LinearLayout>
 
     <Button
         android:id="@+id/btn_travel_calcular"
-        style="@style/botaoCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:text="calcular"
+        style="@style/botaoCalcular"
 
-        />
+       />
 
 </LinearLayout>

@@ -26,10 +26,6 @@ class DialogDistance : DialogFragment() {
             fragment.arguments = args
             return fragment
         }
-
-        private fun resultado(resultado1: Resultado, resultado2: Resultado) {
-
-        }
     }
 
     override fun onCreateView(
