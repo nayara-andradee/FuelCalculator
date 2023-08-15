@@ -26,10 +26,6 @@ class DialogDistance : DialogFragment() {
             fragment.arguments = args
             return fragment
         }
-
-        private fun resultado (resultado1:Resultado,resultado2: Resultado){
-
-        }
     }
 
     override fun onCreateView(
@@ -46,8 +42,8 @@ class DialogDistance : DialogFragment() {
         val resultado = arguments?.getSerializable(ARGUMENT_KEY) as? ResultadoDistance
         val resultadoDistancia = view.findViewById<TextView>(R.id.resultado_distancia)
         val resultadoPreco = view.findViewById<TextView>(R.id.resultado_preco)
-        val autonomia: String = "%.2fKm".format(resultado?.autonomia)
-        val custoviagem: String = "R$%.2f".format(resultado?.precoTotalCombustivel)
+        val autonomia: String = "%.2f Km".format(resultado?.autonomia)
+        val custoviagem: String = "R$ %.2f".format(resultado?.precoTotalCombustivel)
 
         resultadoDistancia.text = autonomia
         resultadoPreco.text = custoviagem

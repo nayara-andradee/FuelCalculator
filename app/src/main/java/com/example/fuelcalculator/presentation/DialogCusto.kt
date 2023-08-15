@@ -44,10 +44,10 @@ class DialogCusto : DialogFragment() {
         val tv_custoviagem = view.findViewById<TextView>(R.id.tv_dialogcusto_custoviagem)
         val tv_custopessoa = view.findViewById<TextView>(R.id.tv_dialogcusto_custopessoa)
         val resultado = arguments?.getSerializable(ARGUMENT_KEY) as? Resultado
-        val totalLitros: String = "%.2fL".format(resultado?.totallitros)
-        val totalkm: String = "%.2fKm".format(resultado?.totalkm)
-        val custoviagem: String = "R$%.2f".format(resultado?.custviagem)
-        val custopessoa: String = "R$%.2f".format(resultado?.custopessoa)
+        val totalLitros: String = "%.2f Litros".format(resultado?.totallitros)
+        val totalkm: String = "%.2f Km".format(resultado?.totalkm)
+        val custoviagem: String = "R$ %.2f".format(resultado?.custviagem)
+        val custopessoa: String = "R$ %.2f".format(resultado?.custopessoa)
 
 
 
