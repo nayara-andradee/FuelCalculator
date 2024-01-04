@@ -4,7 +4,7 @@
 
 ## :camera_flash: Screenshots
 <!-- You can add more screenshots here if you like -->
-<img src="/result/fragmentCusto.jpg" width="200">&emsp;<img src="/result/dialogResultadoCusto.jpg" width="200">&emsp;<img src="/result/fragmentDistancia.jpg" width="200">&emsp;<img src="/result/DialogResultDistancia.jpg" width="200">
+<img src="/result/fragmentCusto.jpg" width="180">&emsp;<img src="/result/dialogResultadoCusto.jpg" width="180">&emsp;<img src="/result/fragmentDistancia.jpg" width="180">&emsp;<img src="/result/DialogResultDistancia.jpg" width="180">
 
 ## Tecnologias
 * Kotlin
